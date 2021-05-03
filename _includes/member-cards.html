@@ -1,0 +1,13 @@
+<section class="container px-5 py-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mb-4" id="member-card-group">
+        {% for member in site.data.team.current-members %}
+            {% include member-card.html %}
+        {% endfor %}
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5 g-3" data-masonry='{"percentPosition": true }'>
+        {% for member in site.data.team.former-members %}
+            {% include former-member-card.html %}
+        {% endfor %}
+    </div>
+</section>

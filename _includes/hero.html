@@ -1,0 +1,70 @@
+<style>
+    .myAlert-bottom{
+        position: fixed;
+        bottom: 10px;
+        left:2%;
+        width: 96%;
+        opacity: 1;
+        z-index: 9999;
+    }
+</style>
+
+<section id="image-head" class="bg-image"
+    style="
+    background-image: linear-gradient(to bottom, #1d2454, #382ec0);
+    background-repeat: no-repeat;
+    background-size:cover;">
+    
+    <div class="col-10 col-md-8 pt-5 pb-4 px-2 px-md-4 mx-auto">
+        <h1 class="text-white display-3 d-none d-md-block"><strong>{{ page.hero-tagline }}</strong></h1>
+        <h1 class="text-white d-md-none"><strong>{{ page.hero-tagline }}</strong></h1>
+        {% if page.title == "Home" %}
+            <h3 class="mt-4 text-warning">To learn, to share, to innovate, to inspire!</h3>
+        {% endif %}
+    </div>
+    
+    {% if page.title == "Home" %}
+    <div class="col-10 col-md-8 pt-5 px-2 px-md-4 mx-auto">
+        
+        <div class="d-sm-none">
+            <table>
+            {% tablerow item in site.data.index.social-icons cols:3 %}
+            <div style="display: inline-block;">
+                <a href="{{item.url}}" target="_blank"><i class="{{item.icon}} me-2 text-warning" style="font-size: 2.5rem;"></i></a>
+            </div>
+            {% endtablerow %}
+            </table>
+        </div>
+        
+        <div class="d-none d-sm-block">
+            <table>
+            {% tablerow item in site.data.index.social-icons cols:6 %}
+            <div style="display: inline-block;">
+                <a href="{{item.url}}" target="_blank"><i class="{{item.icon}} me-2 text-warning" style="font-size: 2.5rem;"></i></a>
+            </div>
+            {% endtablerow %}
+            </table>
+        </div>
+    </div>
+    {% endif %}
+    
+    <div style="overflow: hidden; position: relative;
+        top: 10px;">
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 1200 120"
+        xmlns="http://www.w3.org/2000/svg"
+        style="fill: #fff; width: 350%; height: 72px;">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+    </div>
+</section>
+
+{% if page.title == "Home" %}
+    {% if site.data.index.show-alert %}
+        <div class="myAlert-bottom alert alert-warning alert-dismissible fade show bg-warning border border-primary">
+          <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+          <h6 class="mb-0 text-primary"><i class="{{ site.data.index.alert-icon }}"></i> {{ site.data.index.alert-text }}<strong><a href="{{ site.data.index.alert-url }}"> <u>Learn more.</u></a></strong></h6>
+        </div>
+    {% endif %}
+{% endif %}

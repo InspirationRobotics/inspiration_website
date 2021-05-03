@@ -1,0 +1,206 @@
+<div style="height: 150px; overflow: hidden; position: relative;
+top: 4px;">
+  <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+    <path d="M-47.40,61.67 C214.45,153.45 357.78,97.20 578.43,74.50 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #0f0f21 !important">
+    </path>
+  </svg>
+</div>
+
+<section class="bg-navy m-0 pt-3">
+    <footer class="bg-dark-blue container pb-5 px-auto">
+      <div class="row">
+        <div class="col-6 col-md mb-md-3 mt-5 mt-md-0">
+            <img
+                src="/assets/vectors/insp_logo_white.svg"
+                alt="Team Inspiration Logo"
+                height="70"
+                />
+            <ul class="list-unstyled text-small mt-2 order-last order-md-first">
+            <p class="text-dim">© Team Inspiration 2011-2021. All rights reserved.</p>
+<!--            <div style="display: inline-block;">-->
+<!--                {% for item in site.data.index.social-icons %}-->
+<!--                {% endfor %}-->
+<!--            </div>-->
+
+            <div class="d-sm-none">
+                <table>
+                {% tablerow item in site.data.index.social-icons cols:3 %}
+                <div style="display: inline-block;">
+                    <a href="{{item.url}}" target="_blank"><i class="{{item.icon}} text-warning me-1" style="font-size: 1.5rem;"></i></a>
+                </div>
+                {% endtablerow %}
+                </table>
+            </div>
+            
+            <div class="d-none d-sm-block">
+                <table>
+                {% tablerow item in site.data.index.social-icons cols:6 %}
+                <div style="display: inline-block;">
+                    <a href="{{item.url}}" target="_blank"><i class="{{item.icon}} text-warning me-1" style="font-size: 1.5rem;"></i></a>
+                </div>
+                {% endtablerow %}
+                </table>
+            </div>
+
+            <p class="text-dim">Designed with 💛 in San Diego, CA.</p>
+          </ul>
+        </div>
+        <div class="col-6 col-md order-first order-md-last">
+          <h4 class="text-light"><i class="bi-people-fill"></i></h4>
+          <h5 class="text-light">The Team</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-dim" href="#">About Us</a></li>
+            <li><a class="text-dim" href="#">FIRST</a></li>
+            <li><a class="text-dim" href="#">FIRST Global</a></li>
+            <li><a class="text-dim" href="#">RoboSub</a> <span class="badge bg-warning">New</span></li>
+            <li><a class="text-dim" href="#">Donkey Car</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md order-first order-md-last">
+          <h4 class="text-light"><i class="bi-newspaper"></i></h4>
+          <h5 class="text-light">In the Media</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-dim" href="#">Press</a></li>
+            <li><a class="text-dim" href="#">Outreach</a></li>
+            <li><a class="text-dim" href="#">Sponsors</a></li>
+            <li><a class="text-dim" href="#">Publications</a></li>
+            <li><a class="text-dim" href="#">Tutorials & Videos</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+</section>
+
+<!-- JS -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    (function ($) {
+        $.fn.countTo = function (options,viewCounter) {
+      if(viewCounter == 1){
+            options = options || {};
+            
+            return $(this).each(function () {
+                // set options for current element
+                var settings = $.extend({}, $.fn.countTo.defaults, {
+                    from:            $(this).data('from'),
+                    to:              $(this).data('to'),
+                    speed:           $(this).data('speed'),
+                    refreshInterval: $(this).data('refresh-interval'),
+                    decimals:        $(this).data('decimals')
+                }, options);
+                
+                // how many times to update the value, and how much to increment the value on each update
+                var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                    increment = (settings.to - settings.from) / loops;
+                
+                // references & variables that will change with each update
+                var self = this,
+                    $self = $(this),
+                    loopCount = 0,
+                    value = settings.from,
+                    data = $self.data('countTo') || {};
+                
+                $self.data('countTo', data);
+                
+                // if an existing interval can be found, clear it first
+                if (data.interval) {
+                    clearInterval(data.interval);
+                }
+                data.interval = setInterval(updateTimer, settings.refreshInterval);
+                
+                // initialize the element with the starting value
+                render(value);
+                
+                function updateTimer() {
+                    value += increment;
+                    loopCount++;
+                    
+                    render(value);
+                    
+                    if (typeof(settings.onUpdate) == 'function') {
+                        settings.onUpdate.call(self, value);
+                    }
+                    
+                    if (loopCount >= loops) {
+                        // remove the interval
+                        $self.removeData('countTo');
+                        clearInterval(data.interval);
+                        value = settings.to;
+                        
+                        if (typeof(settings.onComplete) == 'function') {
+                            settings.onComplete.call(self, value);
+                        }
+                    }
+                }
+                
+                function render(value) {
+                    var formattedValue = settings.formatter.call(self, value, settings);
+                    $self.html(formattedValue);
+                }
+            });
+        };
+      }
+        
+        $.fn.countTo.defaults = {
+            from: 0,               // the number the element should start at
+            to: 0,                 // the number the element should end at
+            speed: 1000,           // how long it should take to count between the target numbers
+            refreshInterval: 25,  // how often the element should be updated
+            decimals: 0,           // the number of decimal places to show
+            formatter: formatter,  // handler for formatting the value before rendering
+            onUpdate: null,        // callback method for every time the element is updated
+            onComplete: null       // callback method for when the element finishes updating
+        };
+        
+        function formatter(value, settings) {
+            return value.toFixed(settings.decimals);
+        }
+    }(jQuery));
+
+    jQuery(function ($) {
+      // custom formatting example
+      $('.count-number').data('countToOptions', {
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+      });
+      
+      // start all the timers
+      var viewCounter = 0;
+      $(document).on( 'scroll', function(){
+        if($('.timer').each(count).isOnScreen() && viewCounter < 2){
+            viewCounter++;
+          console.log(viewCounter);
+        }
+      });
+      
+    function count(options) {
+        var $this = $(this);
+        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+      $this.countTo(options,viewCounter);
+    }
+    });
+
+
+    // check if element visible in viewport
+    $.fn.isOnScreen = function(){
+        var win = $(window);
+        var viewport = {
+            top : win.scrollTop(),
+            left : win.scrollLeft()
+        };
+        viewport.right = viewport.left + win.width();
+        viewport.bottom = viewport.top + win.height();
+        
+        var bounds = this.offset();
+        bounds.right = bounds.left + this.outerWidth();
+        bounds.bottom = bounds.top + this.outerHeight();
+        
+        return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+        
+    };
+</script>

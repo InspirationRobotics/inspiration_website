@@ -1,0 +1,61 @@
+#about section write-up and video
+about-tagline: |
+    We are a 9th-year robotics team from San Diego, California, with students ranging from 8th grade to 12th grade.
+
+    We currently participate in the FIRST Tech Challenge, RoboSub, and Donkey Car robotics programs. Our goal is to be able to learn the most we can about robotics and to spread all that knowledge to others, as seen through our team motto:  **To learn, to share, to innovate, to inspire!**
+about-video-url: https://www.youtube.com/embed/UtxpGKBpQns
+
+#numbers to show on the page.
+figures:
+  - number: 2011
+    tagline: Year Founded
+    icon: bi-calendar3
+  - number: 12
+    tagline: Team Members
+    icon: bi-people-fill
+  - number: 131000
+    tagline: People Impacted
+    icon: bi-globe
+  - number: 4
+    tagline: Competitions
+    icon: bi-award-fill
+
+#Alert to show on home page
+show-alert: true
+alert-text: Team Inspiration won the 2020 International RoboSub Competition!
+alert-icon: bi-award
+alert-url: #
+
+#navtab near bottom of the page. Use markdown to write the content.
+navtab-index:
+  - button: RoboSub
+    content: RoboSub is cool
+  - button: FIRST® Robotics
+    content: FIRST® Robotics is cool
+
+navtab-index-b:
+  - button: Roby
+    content: |-
+      **This is some text**
+
+      | Header 1 | Header 2 |
+      |---|---|
+      | Row 1 | Row 2 |
+      | Row 1 | Row 2 |
+      | Row 1 | Row 2 |
+      | Row 1 | Row 2 |
+  
+  
+social-icons:
+  - icon: bi-envelope-fill
+    url: mailto:11128inspiration@gmail.com
+  - icon: bi-instagram
+    url: https://www.instagram.com/ftc11128inspiration/?hl=en
+  - icon: bi-linkedin
+    url: https://www.linkedin.com/in/team-inspiration-5bb0591b9/
+  - icon: bi-facebook
+    url: https://www.facebook.com/teaminspiration11128/
+  - icon: bi-github
+    url: https://github.com/InspirationRobotics
+  - icon: bi-youtube
+    url: https://www.youtube.com/channel/UC59JU4vWL8l0eQrixwds_3A

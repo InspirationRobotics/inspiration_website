@@ -1,0 +1,95 @@
+#current member cards
+current-members:
+  - name: Aditya Mavalankar
+    grade: 12th Grade
+    school: Rancho Bernardo High School
+    description: |
+      * FTC Mentor
+      * RoboSub Programmer
+    photo: Year Founded
+    socials:
+      - icon: bi-github
+        url: https://github.com/amavalankar
+      - icon: bi-instagram
+        url: https://www.instagram.com/adithemav/?hl=en
+  - name: Rihsih
+    grade: 12th Grade
+    school: Rancho Bernardo High School
+    description: |
+      * FTC Mentor
+      * RoboSub Programmer
+    photo: Year Founded
+    socials:
+      - icon: bi-github
+        url: https://github.com/amavalankar
+      - icon: bi-instagram
+        url: https://www.instagram.com/adithemav/?hl=en
+
+former-members:
+  - name: Steven Chen
+    school: UC Berkeley '22
+    date-on-team: 2016-2018
+    socials:
+      - icon: bi-linkedin
+        url: https://www.linkedin.com/in/steven-chen-b7b420167/
+      - icon: bi-github
+        url: https://github.com/sfChen1029
+  - name: Ivan Ozerets
+    school:
+    date-on-team: 2016-2017
+    socials:
+  - name: Zack Nelson
+    school:
+    date-on-team: 2017
+    socials:
+  - name: Raquel Pareja
+    school:
+    date-on-team: 2016-2017
+    socials:
+  - name: Beatriz (Bea) de Olivera
+    school: Duke '24
+    date-on-team: 2017-2018
+    socials:
+      - icon: bi-linkedin
+        url: https://www.linkedin.com
+  - name: Ilan Cosman
+    school: 
+    date-on-team: 2018
+    socials:
+  - name: Eric Silberman
+    school: UC San Diego '24
+    date-on-team: 2016-2020
+    socials:
+      - icon: bi-linkedin
+        url: https://www.linkedin.com
+  - name: Sanjeev Rangan
+    school: CalPoly Pomona '24
+    date-on-team: 2018-2019
+    socials:
+      - icon: bi-linkedin
+        url: https://www.linkedin.com
+  - name: Abihnav Palacharla
+    school:
+    date-on-team: 2018
+  - name: Livia Ceribelli
+    school:
+    date-on-team: 2018
+  - name: Erin Siegel
+    school: Rancho Bernardo High '21
+    date-on-team: 2016-2017
+  - name: Maya Whiteside
+    school: CalPoly Pomona '24
+    date-on-team: 2018-2019
+    socials:
+  - name: Madalyn Nguyen
+    school: Poway High '22
+    date-on-team: 2016-2017
+    socials:
+  - name: Annapurna (Anu) Saladi
+    school: CalPoly Pomona '24
+    date-on-team: 2016-2017
+    socials:
+  - name: Rohan Bosworth
+    school: Poway High '23
+    date-on-team: 2017-2018
+    socials:

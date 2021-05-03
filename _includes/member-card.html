@@ -1,0 +1,22 @@
+<div class="col">
+  <div class="card mb-2 shadow hover-expand">
+    <div class="accordion-item">
+        <button class="accordion-button collapsed border-0" data-toggle="collapse" data-target="#collapse-{{ member.name | remove: ' '' }}">
+          <h5 class="m-0">{{ member.name }}</h5>
+        </button>
+      <div id="collapse-{{ member.name | remove: ' '' }}" class="accordion-collapse collapse border-0" data-parent="#member-card-group">
+        <div class="accordion-body">
+            <h6 class="text-info m-0">{{ member.grade }} <br> {{ member.school }}<h6>
+            <hr class="my-2">
+            <p class="card-text mb-0">{{ member.description | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer bg-primary">
+      {% for social in member.socials %}
+        <a href="{{ social.url }}" target="_blank" class="me-2 fs-4 text-dim"><i class="{{ social.icon }}"></i></a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

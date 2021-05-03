@@ -1,0 +1,15 @@
+<div class="col">
+  <div class="card mb-1 hover-bg-primary hover-expand">
+    <div class="card-body">
+      <h6 class="card-title">{{ member.name }}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">{{ member.date-on-team }}</h6>
+      {% if member.socials or member.school %}
+        <hr class="my-2">
+      {% endif %}
+      <h6 class="text-info">{{ member.school }}</h6>
+      {% for social in member.socials %}
+        <a href="{{ social.url }}" target="_blank" class="me-2 mb-0 fs-4 text-warning"><i class="{{ social.icon }}"></i></a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

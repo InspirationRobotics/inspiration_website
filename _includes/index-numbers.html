@@ -1,0 +1,12 @@
+<section class="bg-dim">
+    <div class="container px-5 py-4">
+        <h3 class="mt-4"><i class="bi-graph-up"></i></h3>
+        <h3>By the Numbers</h3>
+        <p>We're a lot more than a few statistics, but the figures below provide some insight into who we are!</p>
+        <div class="row">
+            {% for figure in site.data.index.figures %}
+                {% include number-card.html %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
