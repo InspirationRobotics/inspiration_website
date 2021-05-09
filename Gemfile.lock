@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+  universal-darwin-20
+
+DEPENDENCIES
+
+BUNDLED WITH
+   2.2.0
