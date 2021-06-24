@@ -1,22 +1,70 @@
 ---
 permalink: /about-us
-layout: default
+layout: page
 hero-tagline: About Us
 title: About Us
 ---
-{% include hero.html %}
 
 <section class="container px-5 py-4">
     <div class="row">
         <div class="col-12">
-            <h3><i class="bi-building"></i></h3>
+            <h3><i class="bi-lightbulb"></i></h3>
             <h3>About Us</h3>
-            <p>We cannot seem to find the page you requested! Please double check the link you typed is valid and has no typos. </p>
-            <button type="button" href="/" class="btn btn-yellow"><i class="bi-arrow-left-short"></i> Return Home</button>
+            <p>Our team has been thriving and growing since its inception when we were in third grade. We first competed in FIRST Lego League (FLL) in 2011 with 6 team members. We now have 12 team members ranging from 8th graders to 12th graders from 6 different schools in the San Diego region. We are very fortunate to have six plus mentors guiding us in our robotics journey.</p>
+            <p>Through hard work and dedication, we have won more than 50 awards, including the prestigious FIRST Tech Challenge (FTC) Inspire Award, FLL Champion Award, and the RoboSub IEEE Innovation Award in the past eight years.  We even competed in the FIRST World Championship in 2017, 2018, and qualified in 2020 which was canceled due the pandemic. In 2020, we became the first middle/high school team that ever won the world title in RoboSub's 23 years of history.</p>
+            
+            <div class="bd-example">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item">
+                      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+                
+                    </div>
+                    <div class="carousel-item active">
+                      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+                
+                    </div>
+                    <div class="carousel-item">
+                      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+                
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+            
+            <p>Our team meets year-round so that we can participate in various robotics competitions. When we are not competing, we cross-train current members in multiple areas of disciplines and train new members in the basics of robotics and programming. In addition to teaching our own team, we also teach others through extensive outreach efforts. We host open houses, mentor other robotics teams, teach several FLL and FTC robotics summer camps, and conduct many other outreach events.</p>
+            <p>Our team is incredibly ambitious and sets one of its goals to compete at the FIRST World Championship and be in the top third of the RoboSub (a university and high school level autonomous underwater vehicle competition) rankings. Our coaches and mentors encourage us to strive toward our goals but our team knows that even if we don’t make it, what we learn is more important than what we win. </p>
         </div>
     </div>
 </section>
 
-{% include member-cards.html %}
+<section class="bg-dim rounded">
+    <div class="container px-5 py-4">
+        <h3><i class="bi-stars text-warning"></i></h3>
+            <h4>Our Mission</h4>
+            <h5 class="text-info">To Learn, To Share, To Innovate, To Inspire!</h5>
+            <p>The main goal for our team is to learn about robotics and to compete so that we push ourselves to be even better. We want to share our knowledge as it builds our understanding of the subjects we have learned. We share our resources because we want everyone to be able to learn robotics. We innovate to expand our knowledge and the ideas of what is possible. We inspire others to do robotics because it is fun, interesting, and useful.</p>
+    </div>
+</section>
+
+<section class="container px-5 py-4">
+    <div class="row">
+        <div class="col-12">
+            <h3><i class="bi-people"></i></h3>
+            <h3>Meet the Team</h3>
+            <p>Between the many robotics competitions we compete in, we have 16 main members. We have also worked with over 25 mentors and 40 industry professionals to learn more and share knowledge within the robotics community. To see the team, expand the drowdowns below! To learn more about our mentors, click the button below.</p>
+        </div>
+    </div>
+
+    {% include member_accordion.html %}
+</section>
 
 {% include contact-section.html %}

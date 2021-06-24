@@ -1,0 +1,56 @@
+---
+permalink: /search.html
+layout: default
+hero-tagline: Search this Site
+title: Site Search
+---
+
+<section class="container px-5 py-4 mt-5">
+  <div class="row">
+      <div class="col-12">
+          <h3><i class="bi-search"></i></h3>
+          <h3>Site Search</h3>
+
+          <!-- <form class="form-floating mb-3" action="/search.html" method="get">
+            <input type="text" class="form-control" id="search-box" name="query">
+            <label for="search-box">Search</label>
+            <input type="submit" value="Search" class="btn btn-info">
+          </form> -->
+
+          <form class="input-group mb-3" action="/search.html" method="get">
+            <input type="text" class="form-control" placeholder="Type to search." id="search-box" name="query">
+            <input class="btn btn-outline-info" type="submit" id="button-addon2"></input>
+          </form>
+      </div>
+  </div>
+</section>
+
+<ul id="search-results"></ul>
+
+<script>
+  window.store = {
+    {% for post in site.posts %}
+      "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape }}",
+        "author": "{{ post.author | xml_escape }}",
+        "category": "{{ post.category | xml_escape }}",
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{ post.url | xml_escape }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+
+    {% for page in site.pages %}
+      "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape }}",
+        "author": "{{ post.author | xml_escape }}",
+        "category": "{{ post.category | xml_escape }}",
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{ post.url | xml_escape }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>
+<script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>

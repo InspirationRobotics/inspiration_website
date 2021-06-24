@@ -8,11 +8,14 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ms-auto">
         {% for item in site.data.navbar %}
         <a class="nav-item nav-link {% if item.name == page.title %}text-warning{% endif %}" href="{{item.link}}"><h5 class="mb-0 mr-md-3">{{ item.name }}</h5></a>
+        <hr class="my-1">
         {% endfor %}
+        <!-- <a class="nav-item nav-link" href="/"><i class="bi-search"></i></a> -->
     </div>
   </div>
 </nav>

@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Page Not Found | Team Inspiration</title>
+  <title>Site Search | Team Inspiration</title>
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -38,57 +38,91 @@
   </div>
 </nav>
 
-  <style>
-    .myAlert-bottom{
-        position: fixed;
-        bottom: 10px;
-        left:2%;
-        width: 96%;
-        opacity: 1;
-        z-index: 9999;
-    }
-</style>
+  <section class="container px-5 py-4 mt-5">
+  <div class="row">
+      <div class="col-12">
+          <h3><i class="bi-search"></i></h3>
+          <h3>Site Search</h3>
 
-<section id="image-head" class="bg-image"
-    style="
-    background-image: linear-gradient(to bottom, #1d2454, #382ec0);
-    background-repeat: no-repeat;
-    background-size:cover;">
-    
-    <div class="col-10 col-md-8 pt-5 pb-4 px-2 px-md-4 mx-auto">
-        <h1 class="text-white display-3 d-none d-md-block"><strong>Page Not Found!</strong></h1>
-        <h1 class="text-white d-md-none"><strong>Page Not Found!</strong></h1>
-        
-    </div>
-    
-    
-    
-    <div style="overflow: hidden; position: relative;
-        top: 10px;">
-      <svg
-        preserveAspectRatio="none"
-        viewBox="0 0 1200 120"
-        xmlns="http://www.w3.org/2000/svg"
-        style="fill: #fff; width: 350%; height: 72px;">
-          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-      </svg>
-    </div>
+          <!-- <form class="form-floating mb-3" action="/search.html" method="get">
+            <input type="text" class="form-control" id="search-box" name="query">
+            <label for="search-box">Search</label>
+            <input type="submit" value="Search" class="btn btn-info">
+          </form> -->
+
+          <form class="input-group mb-3" action="/search.html" method="get">
+            <input type="text" class="form-control" placeholder="Type to search." id="search-box" name="query">
+            <input class="btn btn-outline-info" type="submit" id="button-addon2"></input>
+          </form>
+      </div>
+  </div>
 </section>
 
+<ul id="search-results"></ul>
 
+<script>
+  window.store = {
+    
 
-
-<section class="container px-5 py-4">
-    <div class="row">
-        <div class="col-12">
-            <h3><i class="bi-lightbulb-off-fill"></i> 404 Error</h3>
-            <h1>Page Not Found!</h1>
-            <p>We cannot seem to find the page you requested! Please double check the link you typed is valid and has no typos. </p>
-            <a class="btn btn-warning me-1" href="/"><i class="bi-arrow-return-left me-2"></i>Return Home</a>
-            <a class="btn btn-info" href="/search"><i class="bi-search me-2"></i>Search Site</a>
-        </div>
-    </div>
-</section>
+    
+      "": {
+        "title": "",
+        "author": "",
+        "category": "",
+        "content": "",
+        "url": ""
+      }
+      ,
+    
+      "": {
+        "title": "",
+        "author": "",
+        "category": "",
+        "content": "",
+        "url": ""
+      }
+      ,
+    
+      "": {
+        "title": "",
+        "author": "",
+        "category": "",
+        "content": "",
+        "url": ""
+      }
+      ,
+    
+      "": {
+        "title": "",
+        "author": "",
+        "category": "",
+        "content": "",
+        "url": ""
+      }
+      ,
+    
+      "": {
+        "title": "",
+        "author": "",
+        "category": "",
+        "content": "",
+        "url": ""
+      }
+      ,
+    
+      "": {
+        "title": "",
+        "author": "",
+        "category": "",
+        "content": "",
+        "url": ""
+      }
+      
+    
+  };
+</script>
+<script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>
 
 <div style="height: 150px; overflow: hidden; position: relative;
 top: 4px;">

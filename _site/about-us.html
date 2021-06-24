@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </head>
 <body>
- <nav class="navbar sticky-top navbar-expand-lg bg-primary navbar-dark py-3 px-5">
+  <nav class="navbar sticky-top navbar-expand-lg bg-primary navbar-dark py-3 px-5">
   <a class="navbar-brand" href="/">
       <img class="m-0 p-0"
           src="/assets/vectors/insp_logo_white.svg"
@@ -20,18 +20,25 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ms-auto">
         
         <a class="nav-item nav-link " href="/"><h5 class="mb-0 mr-md-3">Home</h5></a>
+        <hr class="my-1">
         
         <a class="nav-item nav-link text-warning" href="/about-us"><h5 class="mb-0 mr-md-3">About Us</h5></a>
+        <hr class="my-1">
         
+        <a class="nav-item nav-link " href="/search"><h5 class="mb-0 mr-md-3"><i class="bi-search"></i></h5></a>
+        <hr class="my-1">
+        
+        <!-- <a class="nav-item nav-link" href="/"><i class="bi-search"></i></a> -->
     </div>
   </div>
 </nav>
 
-  <style>
+<style>
     .myAlert-bottom{
         position: fixed;
         bottom: 10px;
@@ -70,22 +77,77 @@
 
 
 
-
-<section class="container px-5 py-4">
+  <section class="container px-5 py-4">
+    <section class="container px-5 py-4">
     <div class="row">
         <div class="col-12">
-            <h3><i class="bi-building"></i></h3>
+            <h3><i class="bi-lightbulb"></i></h3>
             <h3>About Us</h3>
-            <p>We cannot seem to find the page you requested! Please double check the link you typed is valid and has no typos. </p>
-            <button type="button" href="/" class="btn btn-yellow"><i class="bi-arrow-left-short"></i> Return Home</button>
+            <p>Our team has been thriving and growing since its inception when we were in third grade. We first competed in FIRST Lego League (FLL) in 2011 with 6 team members. We now have 12 team members ranging from 8th graders to 12th graders from 6 different schools in the San Diego region. We are very fortunate to have six plus mentors guiding us in our robotics journey.</p>
+            <p>Through hard work and dedication, we have won more than 50 awards, including the prestigious FIRST Tech Challenge (FTC) Inspire Award, FLL Champion Award, and the RoboSub IEEE Innovation Award in the past eight years.  We even competed in the FIRST World Championship in 2017, 2018, and qualified in 2020 which was canceled due the pandemic. In 2020, we became the first middle/high school team that ever won the world title in RoboSub's 23 years of history.</p>
+            
+            <div class="bd-example">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item">
+                      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+                
+                    </div>
+                    <div class="carousel-item active">
+                      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+                
+                    </div>
+                    <div class="carousel-item">
+                      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+                
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+            
+            <p>Our team meets year-round so that we can participate in various robotics competitions. When we are not competing, we cross-train current members in multiple areas of disciplines and train new members in the basics of robotics and programming. In addition to teaching our own team, we also teach others through extensive outreach efforts. We host open houses, mentor other robotics teams, teach several FLL and FTC robotics summer camps, and conduct many other outreach events.</p>
+            <p>Our team is incredibly ambitious and sets one of its goals to compete at the FIRST World Championship and be in the top third of the RoboSub (a university and high school level autonomous underwater vehicle competition) rankings. Our coaches and mentors encourage us to strive toward our goals but our team knows that even if we don’t make it, what we learn is more important than what we win. </p>
         </div>
     </div>
 </section>
 
+<section class="bg-dim rounded">
+    <div class="container px-5 py-4">
+        <h3><i class="bi-stars text-warning"></i></h3>
+            <h4>Our Mission</h4>
+            <h5 class="text-info">To Learn, To Share, To Innovate, To Inspire!</h5>
+            <p>The main goal for our team is to learn about robotics and to compete so that we push ourselves to be even better. We want to share our knowledge as it builds our understanding of the subjects we have learned. We share our resources because we want everyone to be able to learn robotics. We innovate to expand our knowledge and the ideas of what is possible. We inspire others to do robotics because it is fun, interesting, and useful.</p>
+    </div>
+</section>
+
 <section class="container px-5 py-4">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mb-4" id="member-card-group">
+    <div class="row">
+        <div class="col-12">
+            <h3><i class="bi-people"></i></h3>
+            <h3>Meet the Team</h3>
+            <p>Between the many robotics competitions we compete in, we have 16 main members. We have also worked with over 25 mentors and 40 industry professionals to learn more and share knowledge within the robotics community. To see the team, expand the drowdowns below! To learn more about our mentors, click the button below.</p>
+        </div>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <button class="accordion-button collapsed" data-toggle="collapse" data-target="#collapse-main-members">
+        <h5 class="m-0"><i class="bi-person-badge me-2"></i>Current Team</h5>
+        </button>
         
-            <div class="col">
+        <div id="collapse-main-members" class="accordion-collapse collapse border-0" data-parent="#member-card-group">
+            <div class="accordion-body">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mb-4" id="member-card-group">
+                    
+                        <div class="col">
   <div class="card mb-2 shadow hover-expand">
     <div class="accordion-item">
         <button class="accordion-button collapsed border-0" data-toggle="collapse" data-target="#collapse-AdityaMavalankar">
@@ -93,7 +155,7 @@
         </button>
       <div id="collapse-AdityaMavalankar" class="accordion-collapse collapse border-0" data-parent="#member-card-group">
         <div class="accordion-body">
-            <h6 class="text-info m-0">12th Grade <br> Rancho Bernardo High School<h6>
+            <h6 class="text-info m-0">12th Grade <br> UC Berkeley '25<h6>
             <hr class="my-2">
             <p class="card-text mb-0"><ul>
   <li>FTC Mentor</li>
@@ -113,8 +175,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                    
+                        <div class="col">
   <div class="card mb-2 shadow hover-expand">
     <div class="accordion-item">
         <button class="accordion-button collapsed border-0" data-toggle="collapse" data-target="#collapse-Rihsih">
@@ -142,12 +205,24 @@
     </div>
   </div>
 </div>
-        
+
+                    
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5 g-3" data-masonry='{"percentPosition": true }'>
+    <div class="accordion-item">
+        <button class="accordion-button collapsed" data-toggle="collapse" data-target="#collapse-former-members">
+        <h5 class="m-0"><i class="bi-person-badge-fill me-2"></i>Team Inspiration Alumni</h5>
+        </button>
         
-            <div class="col">
+        <div id="collapse-former-members" class="accordion-collapse collapse border-0" data-parent="#member-card-group">
+            <div class="accordion-body">
+                <!-- <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3" data-masonry='{"percentPosition": true }'> -->
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Steven Chen</h6>
@@ -164,8 +239,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Ivan Ozerets</h6>
@@ -176,8 +252,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Zack Nelson</h6>
@@ -188,8 +265,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Raquel Pareja</h6>
@@ -200,8 +278,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Beatriz (Bea) de Olivera</h6>
@@ -216,8 +295,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Ilan Cosman</h6>
@@ -228,8 +308,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Eric Silberman</h6>
@@ -244,8 +325,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Sanjeev Rangan</h6>
@@ -260,8 +342,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Abihnav Palacharla</h6>
@@ -272,8 +355,9 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Livia Ceribelli</h6>
@@ -284,83 +368,83 @@
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Erin Siegel</h6>
       <h6 class="card-subtitle mb-2 text-muted">2016-2017</h6>
       
-        <hr class="my-2">
-      
-      <h6 class="text-info">Rancho Bernardo High '21</h6>
+      <h6 class="text-info"></h6>
       
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Maya Whiteside</h6>
       <h6 class="card-subtitle mb-2 text-muted">2018-2019</h6>
       
-        <hr class="my-2">
-      
-      <h6 class="text-info">CalPoly Pomona '24</h6>
+      <h6 class="text-info"></h6>
       
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Madalyn Nguyen</h6>
       <h6 class="card-subtitle mb-2 text-muted">2016-2017</h6>
       
-        <hr class="my-2">
-      
-      <h6 class="text-info">Poway High '22</h6>
+      <h6 class="text-info"></h6>
       
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Annapurna (Anu) Saladi</h6>
       <h6 class="card-subtitle mb-2 text-muted">2016-2017</h6>
       
-        <hr class="my-2">
-      
-      <h6 class="text-info">CalPoly Pomona '24</h6>
+      <h6 class="text-info"></h6>
       
     </div>
   </div>
 </div>
-        
-            <div class="col">
+
+                        
+                            <div class="col">
   <div class="card mb-1 hover-bg-primary hover-expand">
     <div class="card-body">
       <h6 class="card-title">Rohan Bosworth</h6>
       <h6 class="card-subtitle mb-2 text-muted">2017-2018</h6>
       
-        <hr class="my-2">
-      
-      <h6 class="text-info">Poway High '23</h6>
+      <h6 class="text-info"></h6>
       
     </div>
   </div>
 </div>
-        
+
+                        
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 </section>
 
 <section class="container p-3 pb-0">
     <div class="container px-5 py-4 rounded border border-primary my-4 bg-primary item-shadow">
-        <h3 class="text-light"><i class="bi-megaphone-fill"></i></h3>
+        <h3 class="text-light"><i class="bi-megaphone"></i></h3>
         <h3 class="text-light">Contact Us!</h3>
         <p class="text-light">Questions? Comments? You've come to the right place!</p>
         
@@ -370,7 +454,8 @@
     </div>
 </section>
 
-<div style="height: 150px; overflow: hidden; position: relative;
+  </section>
+  <div style="height: 150px; overflow: hidden; position: relative;
 top: 4px;">
   <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
     <path d="M-47.40,61.67 C214.45,153.45 357.78,97.20 578.43,74.50 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #0f0f21 !important">
@@ -404,7 +489,7 @@ top: 4px;">
                 <tr class="row1">
 <td class="col1">
                 <div style="display: inline-block;">
-                    <a href="mailto:11128inspiration@gmail.com" target="_blank"><i class="bi-envelope-fill text-warning me-1" style="font-size: 1.5rem;"></i></a>
+                    <a href="mailto:11128inspiration@gmail.com" target="_blank"><i class="bi-envelope text-warning me-1" style="font-size: 1.5rem;"></i></a>
                 </div>
                 </td><td class="col2">
                 <div style="display: inline-block;">
@@ -437,7 +522,7 @@ top: 4px;">
                 <tr class="row1">
 <td class="col1">
                 <div style="display: inline-block;">
-                    <a href="mailto:11128inspiration@gmail.com" target="_blank"><i class="bi-envelope-fill text-warning me-1" style="font-size: 1.5rem;"></i></a>
+                    <a href="mailto:11128inspiration@gmail.com" target="_blank"><i class="bi-envelope text-warning me-1" style="font-size: 1.5rem;"></i></a>
                 </div>
                 </td><td class="col2">
                 <div style="display: inline-block;">
@@ -468,7 +553,7 @@ top: 4px;">
           </ul>
         </div>
         <div class="col-6 col-md order-first order-md-last">
-          <h4 class="text-light"><i class="bi-people-fill"></i></h4>
+          <h4 class="text-light"><i class="bi-people"></i></h4>
           <h5 class="text-light">The Team</h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-dim" href="#">About Us</a></li>

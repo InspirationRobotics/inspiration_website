@@ -29,25 +29,32 @@ alert-url: #
 #navtab near bottom of the page. Use markdown to write the content.
 navtab-index:
   - button: RoboSub
-    content: RoboSub is cool
-  - button: FIRST® Robotics
-    content: FIRST® Robotics is cool
-
-navtab-index-b:
-  - button: Roby
     content: |-
-      **This is some text**
+      **We've competed in the international, university-level Robosub competition since 2019.**
+      - In 2019, as a rookie team, we focused on getting a solid set of fundamentals, pre-qualified, and ranked 12th out of the 55 competing teams. 
+      - In 2020, due to the pandemic, efforts were shifted to focus on a virtual competition. Through hard work and careful planning, we became the first middle/high school team to ever win the Robosub competition in its 23+ year history!
+      - This year, we're leveling up. We're partnering with more companies and professionals to build top-tier robots, with a continued focus on simulation and preparing for the 2022 in-person competition.
+  - button: FIRST® Robotics
+    content: |-
+      **We've competed in various FIRST programs since 2011!**
+      - Our veteran member, Mabel, started with FIRST® LEGO LEAGUE Junior (now called FLL Explorer)
+      - Most of our members started their robotics journies in FIRST® LEGO LEAGUE.
+      - In 2016, we moved on the the middle/high school-level FIRST® Tech Challenge competition, and have just completed our fifth year in the program.
+  - button: FIRST® Global
+    content: |-
+      **We strive to leave a global impact, and have done just that through FIRST® Global.**
+      - In 2017, we began working with a robotics team in Benin, Africa, through FIRST Global.
+      - Over the years, we've expanded our reach, mentoring teams in Benin, Bolivia, Brazil, Indonesia, Nepal, Nigeria, Paraguay, and Turkey.
+      - We've even had members visit Benin and Parguay in 2019. 
+      - While the pandemic has slowed down progress, we're now starting to re-engage with the teams and continue expanding the programs!
+  - button: Donkeycar
+    content: |-
+      Donkey Car also called Robocar, is a DIY self-driving vehicle that utilizes cameras and a servo shield, both programmed by a Raspberry Pi computer. Teams use neural networks so their cars "learn" from the many test runs which train the cars how to drive on the track. Many of these Donkey cars compete against one another on a predetermined race track in the Robocar program. There are different levels to the competition, where anybody from rookies to experts can participate.
+      
+      **We've competed in the competition for over three years and have built four cars.**
 
-      | Header 1 | Header 2 |
-      |---|---|
-      | Row 1 | Row 2 |
-      | Row 1 | Row 2 |
-      | Row 1 | Row 2 |
-      | Row 1 | Row 2 |
-  
-  
 social-icons:
-  - icon: bi-envelope-fill
+  - icon: bi-envelope
     url: mailto:11128inspiration@gmail.com
   - icon: bi-instagram
     url: https://www.instagram.com/ftc11128inspiration/?hl=en

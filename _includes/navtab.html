@@ -2,7 +2,7 @@
     <div class="container px-5 py-4">
         <h3 class="mt-4"><i class="bi-ui-checks"></i></h3>
         <h3>What We Do</h3>
-        <p>We're a lot more than a few statistics, but the figures below provide some insight into who we are!</p>
+        <p>We compete in several robotics competitions here on Team Inspiration! Click on the buttons below to read a brief overview of what we do.</p>
         <ul class="nav nav-pills">
         {% for item in path-tab %}
             <li><button data-toggle="pill" data-content="{{ item.content | markdownify }}" class="btn btn-outline-info m-2 navtab">{{ item.button }}</button></li>

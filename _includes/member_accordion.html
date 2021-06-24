@@ -1,0 +1,34 @@
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <button class="accordion-button collapsed" data-toggle="collapse" data-target="#collapse-main-members">
+        <h5 class="m-0"><i class="bi-person-badge me-2"></i>Current Team</h5>
+        </button>
+        
+        <div id="collapse-main-members" class="accordion-collapse collapse border-0" data-parent="#member-card-group">
+            <div class="accordion-body">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mb-4" id="member-card-group">
+                    {% for member in site.data.team.current-members %}
+                        {% include member-card.html %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button collapsed" data-toggle="collapse" data-target="#collapse-former-members">
+        <h5 class="m-0"><i class="bi-person-badge-fill me-2"></i>Team Inspiration Alumni</h5>
+        </button>
+        
+        <div id="collapse-former-members" class="accordion-collapse collapse border-0" data-parent="#member-card-group">
+            <div class="accordion-body">
+                <!-- <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3" data-masonry='{"percentPosition": true }'> -->
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                        {% for member in site.data.team.former-members %}
+                            {% include former-member-card.html %}
+                        {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
